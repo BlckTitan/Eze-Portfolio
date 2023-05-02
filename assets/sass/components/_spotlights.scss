@@ -22,7 +22,7 @@
 				border-radius: 0;
 				display: block;
 				position: relative;
-				width: 25em;
+				width: 40em;
 
 				img {
 					border-radius: 0;
@@ -48,7 +48,7 @@
 				@include vendor('display', 'flex');
 				@include vendor('flex-direction', 'column');
 				@include vendor('justify-content', 'center');
-				width: #{_size(inner-width) - 25em};
+				width: #{_size(inner-width) - 40em};
 				-ms-flex: 1;
 
 				> .inner {

@@ -1,10 +1,3 @@
-///
-/// Hyperspace by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
-
-/* Intro */
 
 	#intro {
 		background-attachment: fixed;
@@ -12,7 +5,7 @@
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
-
+		
 		p {
 			font-size: 1.25em;
 
@@ -29,5 +22,22 @@
 
 		@include breakpoint('<=large') {
 			background-attachment: scroll;
+		}
+	}
+
+	
+	div.inner{
+				
+		div.profile_avatar{
+			width: 300px;
+			height: 300px;
+			img{
+				width: inherit;
+				height: inherit;
+				object-fit: cover;
+				object-position: center;
+				border-radius: 50%;
+			}
+			margin-bottom: 1.5rem;
 		}
 	}

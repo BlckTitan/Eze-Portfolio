@@ -12,35 +12,26 @@
 		border-radius: _size(border-radius);
 		border: solid 1px _palette(border);
 		background: _palette(border-bg);
+		//background: #000;
 		margin: 0 0 _size(element-margin) 0;
 
 		section {
-			@include padding(3em, 3em, (0.5em, 0, 0, 4em));
-			width: 50%;
+			@include padding(1em, 3em, (0.5em, 0, 3em, 4em));
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			width: 100%;
+			justify-content: center;
 			border-top: solid 1px _palette(border);
 			position: relative;
-
-			&:nth-child(-n + 2) {
-				border-top-width: 0;
+			span.tile{
+				padding: 0.4rem 1.5rem;
+				border-radius: 0.3rem;
+				background-color: #232323;
+				margin: 0.3rem;
 			}
 
-			&:nth-child(2n) {
-				border-left: solid 1px _palette(border);
-			}
-
-			.icon {
-				@include vendor('transition', (
-					'opacity #{_duration(activation) * 0.5} ease',
-					'transform #{_duration(activation) * 0.5} ease'
-				));
-				@include vendor('transition-delay', '1s');
-				@include vendor('transform', 'scale(1)');
-				position: absolute;
-				left: 3em;
-				top: 3em;
-				opacity: 1;
-			}
-
+			
 			@for $i from 1 through _misc(max-features) {
 				&:nth-child(#{$i}) {
 					.icon {
@@ -93,6 +84,21 @@
 					position: relative;
 					top: 0;
 				}
+			}
+		}
+	}
+	
+	div.inner{
+				
+		div.profile_avatar{
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			img{
+				width: 100px;
+				height: 100px;
+				object-fit: cover;
+				object-position: center;
 			}
 		}
 	}

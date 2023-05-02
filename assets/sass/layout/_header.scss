@@ -23,8 +23,8 @@
 		> nav {
 			@include vendor('flex', '1');
 			text-align: right;
-
-			> ul {
+			>
+			 ul {
 				margin: 0;
 				padding: 0;
 
