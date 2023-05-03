@@ -29,14 +29,19 @@
 	div.inner{
 				
 		div.profile_avatar{
-			width: 300px;
-			height: 300px;
+			width: 250px;
+			height: 250px;
+			border-radius: 50%;
+			position: relative;
+			background-color: rgba(255, 255, 255, 0.3);
 			img{
 				width: inherit;
-				height: inherit;
+				height: 300px;
 				object-fit: cover;
 				object-position: center;
-				border-radius: 50%;
+				position: absolute;
+				right: -2.8rem;
+				bottom: 1rem;
 			}
 			margin-bottom: 1.5rem;
 		}
