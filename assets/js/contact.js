@@ -1,6 +1,3 @@
-let name_error_message = document.querySelector('span.name');
-let email_error_message = document.querySelector('span.email');
-let message_error_message = document.querySelector('span.message');
 let submit_btn = document.querySelector('.submit');
 
 const service_id = 'service_opymzht';
@@ -11,6 +8,10 @@ submit_btn.addEventListener('submit', (e) => {
     valdateForm()
 });
 const valdateForm = () =>{
+    let name_error_message = document.querySelector('span.name');
+    let email_error_message = document.querySelector('span.email');
+    let message_error_message = document.querySelector('span.message');
+
     let params = {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
