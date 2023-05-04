@@ -2917,4 +2917,21 @@ div.inner div.profile_avatar img {
   position: absolute;
   right: -2.8rem;
   bottom: 1rem;
+}
+
+span.error_message {
+  color: rgb(233, 48, 48);
+}
+
+div.success {
+  background-color: #e9e9e9;
+  padding: 0.5em 1em;
+  position: fixed;
+  left: 4em;
+  top: 0;
+  border-radius: 0.3rem;
+  z-index: 5;
+}
+div.success span.success_message {
+  color: rgb(47, 143, 47);
 }/*# sourceMappingURL=main.css.map */
