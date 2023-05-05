@@ -7,6 +7,7 @@ submit_btn.addEventListener('submit', (e) => {
     e.preventDefault()
     valdateForm()
 });
+
 const valdateForm = () =>{
     let name_error_message = document.querySelector('span.name');
     let email_error_message = document.querySelector('span.email');
@@ -17,7 +18,9 @@ const valdateForm = () =>{
         email: document.getElementById('email').value,
         message: document.getElementById('message').value
     }
+
     let empty_field = '';
+
     switch (empty_field) {
         case params.name:
             name_error_message.innerHTML = 'Name field cannot be empty';
@@ -67,3 +70,29 @@ const handleSuccess = () => {
         success_container.style.visibility = 'hidden';
     }, 5000)
 }
+
+/*const scrollToTop = () =>{
+    let scroll_progress = document.querySelector('.scrollProgress');
+    //let scroll_progress_value = document.querySelector('.scrollProgressValue');
+    let scroll_position = document.documentElement.scrollTop;
+    let scroll_height =  
+        document.documentElement.scrollHeight - 
+        document.documentElement.clientHeight;
+    
+    let scroll_height_percent = Math.round((scroll_position * 100) / scroll_height)
+
+    if (scroll_position > 100){
+        scroll_progress.style.display = 'grid';
+    }else{
+        scroll_progress.style.display = 'none';
+    }
+    
+    scroll_progress.addEventListener('click', () => {
+        document.documentElement.scrollTop = 0
+    })
+    scroll_progress.style.background = `conic-gradient(#64b5f6 ${scroll_height_percent}%,
+        #d7d7d7 ${scroll_height_percent}%)`;
+}
+
+window.onload = scrollToTop;
+window.onscroll = scrollToTop;*/

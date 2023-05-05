@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/sass/main.css" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -139,17 +140,17 @@
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
+												<input type="text" name="name" id="name" placeholder="John doe" required/>
 												<span class="error_message name"></span>
 											</div>
 											<div class="field half">
 												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
+												<input type="text" name="email" id="email" placeholder="johnDoe@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
 												<span class="error_message email"></span>
 											</div>
 											<div class="field">
 												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
+												<textarea name="message" id="message" rows="5" required></textarea>
 												<span class="error_message message"></span>
 											</div>
 										</div>
@@ -189,6 +190,13 @@
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper style1-alt">
+				<div className='scrollProgress'>
+					<span className='scrollProgressValue'>
+						<span class="material-icons-outlined">
+							arrow_upward
+						</span>
+					</span>
+				</div>
 				<div class="inner">
 					<ul class="menu">
 						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
@@ -206,7 +214,7 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/contact.js"></script>
 			<script type="text/javascript"
-			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+				src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 			</script>
 
 	</body>
