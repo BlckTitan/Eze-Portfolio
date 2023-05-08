@@ -2303,11 +2303,12 @@ body.is-ie .spotlights > section {
 }
 .spotlights > section > .image {
   background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0;
   display: block;
   position: relative;
-  width: 40em;
+  width: 50em;
 }
 .spotlights > section > .image img {
   border-radius: 0;
@@ -2326,7 +2327,7 @@ body.is-ie .spotlights > section {
   width: 100%;
 }
 .spotlights > section > .content {
-  padding: 4em 5em 2em 5em;
+  padding: 1.5em 2em 0.1em 2em;
   display: -moz-flex;
   display: -ms-flex;
   display: flex;
@@ -2343,6 +2344,9 @@ body.is-ie .spotlights > section {
   transition: opacity 1s ease, transform 1s ease;
   opacity: 1;
 }
+.spotlights > section > .content > .inner p {
+  text-overflow: ellipsis;
+}
 .spotlights > section:nth-child(2) {
   background-color: rgba(0, 0, 0, 0.05);
 }
@@ -2358,7 +2362,7 @@ body.is-ie .spotlights > section {
 }
 @media screen and (max-width: 1680px) {
   .spotlights > section > .content {
-    padding: 4em 4em 2em 4em;
+    padding: 2em 2em 0.1em 2em;
   }
 }
 @media screen and (max-width: 980px) {
