@@ -16,6 +16,10 @@
 		li {
 			padding: 0 0 0 (_size(element-margin) * 0.5);
 			vertical-align: middle;
+			a.visit{
+				margin-bottom: 1rem;
+				margin-right: 1rem;
+			}
 		}
 
 		&.special {
@@ -88,7 +92,6 @@
 					button,
 					.button {
 						width: 100%;
-
 						&.icon {
 							&:before {
 								margin-left: -0.5rem;

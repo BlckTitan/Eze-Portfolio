@@ -1419,7 +1419,7 @@ button,
   border: solid 1px !important;
   border-color: rgba(255, 255, 255, 0.15) !important;
   border-radius: 3em;
-  color: #ffffff !important;
+  color: red_palette(fg-bold) !important;
   cursor: pointer;
   display: inline-block;
   font-size: 0.6em;
@@ -1539,6 +1539,10 @@ button:hover:active:after,
   opacity: 0.1;
 }
 
+/*a.visit.button{
+	background-color: green !important;
+	margin: 5rem !important;
+}*/
 /* Features */
 .features {
   display: -moz-flex;
@@ -2054,6 +2058,10 @@ ul.actions {
 ul.actions li {
   padding: 0 0 0 1em;
   vertical-align: middle;
+}
+ul.actions li a.visit {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 ul.actions.special {
   -moz-justify-content: center;
